@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicolasv.Tp1_android.PageActivity">
+
+    <ImageView
+        android:id="@+id/imgLondon"
+        android:layout_width="412dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_london_foreground"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_star_foreground" />
+
+    <TextView
+        android:id="@+id/txvAng"
+        android:layout_width="123dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="Angleterre"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStar" />
+
+    <TextView
+        android:id="@+id/txvCap"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Capitale :"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvAng" />
+
+    <TextView
+        android:id="@+id/txvCapR"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="38dp"
+        android:text="Londres"
+        android:gravity="center_vertical"
+        android:textColor="#e10606"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/txvCap"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStar" />
+
+    <TextView
+        android:id="@+id/txvLang"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Langue :"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCap" />
+
+    <TextView
+        android:id="@+id/txvLangR"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Anglais"
+        android:gravity="center_vertical"
+        android:textColor="#e10606"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/txvLang"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCapR" />
+
+    <TextView
+        android:id="@+id/txVDes"
+        android:layout_width="310dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:text="L'Angleterre (en anglais England) est une nation constitutive du Royaume-Uni.
+Elle est bordée par l'Ecosse au nord et le pays de Galles à l'ouest. "
+        android:textColor="#209403"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvLang" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="104dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:background="#5d9bd5"
+        android:text="Choisir"
+        android:textAllCaps="false"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toRightOf="@+id/buttonCancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txVDes" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="97dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="32dp"
+        android:background="#ea7d3c"
+        android:text="Annuler"
+        android:textAllCaps="false"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txVDes" />
+
+</android.support.constraint.ConstraintLayout>
